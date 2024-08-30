@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran</title>
+</head>
+<body>
+    <h2>Form Pendaftaran</h2>
+    <form action="#" method="post">
+        <label>NPM:</label><br>
+        <input type="text" id="npm" name="npm" required><br><br>
+        
+        <label>Nama Lengkap:</label><br>
+        <input type="text" id="nama" name="nama" required><br><br>
+        
+        <label>Alamat:</label><br>
+        <textarea id="alamat" name="alamat" rows="3" required></textarea><br><br>
+        
+        <label>Jenis Kelamin:</label><br>
+        <input type="radio" id="laki" name="jenis_kelamin" value="Laki-laki" required>
+        <label>Laki-laki</label>
+        <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan" required>
+        <label>Perempuan</label><br><br>
+        
+        <label>Angkatan:</label><br>
+        <select id="angkatan" name="angkatan" required>
+            <option>2020</option>
+            <option>2021</option>
+            <option>2022</option>
+            <option>2023</option>
+        </select><br><br>
+        
+        <label>Kelas:</label><br>
+        <input type="radio" id="kelas_a" name="kelas" value="A" required>
+        <label>A</label>
+        <input type="radio" id="kelas_b" name="kelas" value="B" required>
+        <label>B</label><br><br>
+        
+        <label>Hobi:</label><br>
+        <input type="checkbox" id="hobi1" name="hobi" value="Olahraga">
+        <label>Olahraga</label>
+        <input type="checkbox" id="hobi2" name="hobi" value="Musik">
+        <label>Musik</label>
+        <input type="checkbox" id="hobi3" name="hobi" value="Membaca">
+        <label>Membaca</label>
+        <input type="checkbox" id="hobi4" name="hobi" value="Travelling">
+        <label>Travelling</label><br><br>
+        
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
