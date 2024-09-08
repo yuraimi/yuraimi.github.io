@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Sederhana</title>
+
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: wheat;
+        }
+        .container {
+            margin-bottom: 30px;
+        }
+        input[type="number"] {
+            color: blue;
+            width: 100px;
+            padding: 5px;
+            margin: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: brown;
+            color: white;
+            font-weight: bold;
+        }
+
+        button:hover{
+            background-color: darkred;
+        }
+
+        span {
+            font-weight: bold;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Kalkulator Sederhana</h2>
+        <label for="bil1">Bilangan 1:</label>
+        <input type="number" id="bil1">
+
+        <label for="bil2">Bilangan 2:</label>
+        <input type="number" id="bil2">
+        <br>
+        <button onclick="hitung('+')">+</button>
+        <button onclick="hitung('-')">-</button>
+        <button onclick="hitung('*')">x</button>
+        <button onclick="hitung('/')">/</button>
+        <p>Hasil: <span id="hasil"></span></p>
+    </div>
+
+    <script>
+        function hitung(operasi) {
+            const bil1=parseFloat(document.getElementById('bil1').value);
+            const bil2=parseFloat(document.getElementById('bil2').value);
+            let hasil;
+
+            switch (operasi) {
+                case '+':
+                    hasil=bil1+bil2;
+                    break;
+                case '-':
+                    hasil=bil1-bil2;
+                    break;
+                case '*':
+                    hasil=bil1*bil2;
+                    break;
+                case '/':
+                    if(bil2==0) hasil=0;
+                    else if(bil1==0) hasil='Tidak dapat membagi 0';
+                    else hasil=bil1/bil2;
+                    break;
+                default:
+                    hasil='Operasi tidak valid'
+                    break;
+            }
+
+            document.getElementById('hasil').innerText=hasil;
+            
+        }
+
+
+
+    </script>
+</body>
