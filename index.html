@@ -1,62 +1,92 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kalkulator Sederhana</title>
+    <title>Pengumpulan Tugas</title>
 
     <style>
         body {
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            background-color: beige;
-            margin: 30px;
-            color: black;
+            background-color: #f3f4f6;
+            margin: 0;
+            padding: 0;
+            color: #333;
         }
-        header{
-            background-color: black;
-        }
-        h1{
-            color: white;
+        header {
+            background-color: #333;
+            padding: 15px 0;
             text-align: center;
         }
-        h2{
-            font-size: medium;
+        header h1 {
+            color: white;
+            margin: 0;
+            font-size: 1.8em;
         }
-        a {
-            color: blue;
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .biodata {
+            padding: 10px 0;
+            border-bottom: 2px solid #e4e4e4;
+        }
+        .biodata p {
+            margin: 5px 0;
+            font-size: 1.1em;
+        }
+        .tasks {
+            margin-top: 20px;
+        }
+        .tasks h2 {
+            font-size: 1.5em;
+            color: #444;
+            margin-bottom: 10px;
+        }
+        .tasks ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .tasks li {
+            margin-bottom: 10px;
+        }
+        .tasks a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+        .tasks a:hover {
+            color: #0056b3;
             text-decoration: underline;
-            
         }
     </style>
 </head>
 <body>
     <header>
-        <nav>
-            <h1>Pengumpulan Tugas Pemograman Web</h1>
-        </nav>
+        <h1>Pengumpulan Tugas Pemograman Web</h1>
     </header>
 
-    <div>
-        <p><span>Nama : </span>Ayumi Fathiyaraisha</p>
-        <p><span>NPM  : </span>140810230012</p>
-        <p><span>Kelas: </span>B</p>
-    </div>
+    <div class="container">
+        <div class="biodata">
+            <p><strong>Nama:</strong> Ayumi Fathiyaraisha</p>
+            <p><strong>NPM:</strong> 140810230012</p>
+            <p><strong>Kelas:</strong> B</p>
+        </div>
 
-    <h2>Tugas</h2>
-    <div>
-        <li>
-            <a href="/Tugas1/code.html">Tugas 1</a>
-        </li>
-        <li>
-            <a href="/Tugas2/tugasHTML.html">Tugas 2 HTML</a>
-        </li>
-        <li>
-            <a href="/Tugas2/tugasCSS.html">Tugas 2 CSS</a>
-        </li>
-        <li>
-            <a href="/Tugas3/kalkulator.html">Tugas 3 Kalkulator</a>
-        </li>
-        <li>
-            <a href="/Tugas3/konversiNilai.html">Tugas 3 Konversi Nilai</a>
-        </li>
+        <div class="tasks">
+            <h2>Daftar Tugas</h2>
+            <ul>
+                <li><a href="/Tugas1/code.html">Tugas 1</a></li>
+                <li><a href="/Tugas2/tugasHTML.html">Tugas 2 HTML</a></li>
+                <li><a href="/Tugas2/tugasCSS.html">Tugas 2 CSS</a></li>
+                <li><a href="/Tugas3/kalkulator.html">Tugas 3 Kalkulator</a></li>
+                <li><a href="/Tugas3/konversiNilai.html">Tugas 3 Konversi Nilai</a></li>
+            </ul>
+        </div>
     </div>
 </body>
+</html>
